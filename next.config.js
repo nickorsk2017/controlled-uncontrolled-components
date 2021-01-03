@@ -1,6 +1,7 @@
 module.exports = {
-    /* config options here */
-    typescript: {
-        ignoreBuildErrors: false,
-    },
+  /* config options here */
+  typescript: {
+    ignoreBuildErrors: false
+  },
+  distDir: '../.next',
 }

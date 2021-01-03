@@ -1,0 +1,14 @@
+.form {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.submit {
+  border: 1px solid #fff;
+  background: #147ada;
+  color: #fff;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
