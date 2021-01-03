@@ -1,3 +1,4 @@
+## Description
 This is demonstartion of performance of different types of react components:
 
 - Controlled components
@@ -12,7 +13,7 @@ MIT
 
 ## Used technologies
 
-nextjs, typescript
+next.js, typescript
 
 ## Requirements (tested version)
 - npm 6.14.10

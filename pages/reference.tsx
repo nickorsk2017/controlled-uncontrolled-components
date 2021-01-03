@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import {Layout} from "@main";
-import {Content} from "@pagesBlocks/_reference";
+import Head from "next/head";
+import { Layout } from "@main";
+import { Content } from "@pagesBlocks/_reference";
 
 function Users() {
   return (
@@ -10,9 +10,9 @@ function Users() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Content/>
+      <Content />
     </>
-  )
+  );
 }
 
 export default Layout(Users);

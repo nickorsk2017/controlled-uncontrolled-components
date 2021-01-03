@@ -1,0 +1,37 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
+  "plugins": [
+    // ...
+    "react-hooks",
+    "prettier"
+  ],
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}

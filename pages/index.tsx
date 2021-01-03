@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import {Layout} from "@main";
-import {Content} from "@pagesBlocks/_home/";
+import Head from "next/head";
+import { Layout } from "@main";
+import { Content } from "@pagesBlocks/_home/";
 
 function Home() {
   return (
@@ -10,9 +10,9 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Content/>
+      <Content />
     </>
-  )
+  );
 }
 
 export default Layout(Home);
