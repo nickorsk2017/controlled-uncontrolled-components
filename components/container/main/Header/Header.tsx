@@ -1,25 +1,22 @@
-import Link from 'next/link';
-import styles from './Header.module.css';
+import LinkWrapper from '../LinkWrapper/LinkWrapper';
+import styles from './Header.module.scss';
 
 export function Header() {
     return (
     <header className={styles.navigation}>
         <ul className={styles.navigationLinks}>
-            <li className={styles.link}>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-            </li>
-            <li className={styles.link}>
-                <Link href="/about">
-                    <a>About Us</a>
-                </Link>
-            </li>
-            <li className={styles.link}>
-                <Link href="/users">
-                    <a>Users</a>
-                </Link>
-            </li>
+            <LinkWrapper styles={styles.link} href="/" >
+                <a>Home</a>
+            </LinkWrapper>
+            <LinkWrapper styles={styles.link} href="/controlled" >
+                <a>Controlled</a>
+            </LinkWrapper>
+            <LinkWrapper styles={styles.link} href="/throttle" >
+                <a>Throttle</a>
+            </LinkWrapper>
+            <LinkWrapper styles={styles.link} href="/reference" >
+                <a>Reference</a>
+            </LinkWrapper>
         </ul>
         <div></div>
     </header>

@@ -1,3 +1,3 @@
-export {TextInput} from "./TextInput/TextInput";
-export {NotControlledInput} from "./NotControlledInput/NotControlledInput";
+export {ThrottleInput} from "./ThrottleInput/ThrottleInput";
+export {ReferenceInput} from "./ReferenceInput/ReferenceInput";
 export {ControlledInput} from "./ControlledInput/ControlledInput";

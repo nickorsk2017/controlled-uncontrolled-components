@@ -1,0 +1,11 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menuItem {
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}

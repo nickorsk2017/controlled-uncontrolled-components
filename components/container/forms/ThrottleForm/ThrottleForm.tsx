@@ -1,10 +1,10 @@
 import { useState, useLayoutEffect } from "react";
 import {useCountRender, useEventEmitter} from "@hooks";
+import {ThrottleInput} from "@ui";
 import {useForm} from "./_hooks";
-import {ControlledInput} from "@ui";
-import styles from './ControlledForm.module.css';
+import styles from './ThrottleForm.module.css';
 
-export function ControlledForm() {
+export function ThrottleForm() {
     const [formState, updateFormState] = useState({
         firstName: "",
         lastName: "",
@@ -24,7 +24,7 @@ export function ControlledForm() {
         const message = Object.keys(formData).reduce((message, controlName) => { return message + `${controlName}: ${formData[controlName]}\n`}, "FORM RESULT:\n");
         alert(message);
     };
-
+    
     // count of render
     const {getCountRender, counter} = useCountRender();
     counter();
@@ -33,19 +33,19 @@ export function ControlledForm() {
     return (
         <form onSubmit={handleSubmit} className={styles.form}>
             <div>Count of render: {getCountRender()}</div>
-            <h3>The component B <br/></h3>
-            <p>This form  uses <u>controlled</u> components inside. <br/> The value of form will update each time on changing and it will be touch the react app</p>
-            <ControlledInput
+            <h3>The component B <br/></h3> 
+            <p>This form uses <u>uncontrolled-throttle</u> components inside.<br/> The value of form will update after 300 ms and it will touch the react app.</p>
+            <ThrottleInput
                 label={"First name"}
                 value={getValueControl("firstName")}
                 onChange={(value) => onChangeControl("firstName", value)}
             />
-             <ControlledInput
+             <ThrottleInput
                 label={"Last name"}
                 value={getValueControl("lastName")}
                 onChange={(value) => onChangeControl("lastName", value)}
             />
-            <ControlledInput
+            <ThrottleInput
                 label={"Address"}
                 value={getValueControl("address")}
                 onChange={(value) => onChangeControl("address", value)}
