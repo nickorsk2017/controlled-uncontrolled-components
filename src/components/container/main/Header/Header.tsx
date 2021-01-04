@@ -1,7 +1,7 @@
-import LinkWrapper from '../LinkWrapper/LinkWrapper'
-import styles from './Header.module.scss'
+import LinkWrapper from '../LinkWrapper/LinkWrapper';
+import styles from './Header.module.scss';
 
-export function Header() {
+export function Header(): JSX.Element {
   return (
     <header className={styles.navigation}>
       <ul className={styles.navigationLinks}>
@@ -20,5 +20,5 @@ export function Header() {
       </ul>
       <div></div>
     </header>
-  )
+  );
 }

@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { Layout } from '@main/'
-import { Content } from '@pagesBlocks/_home/'
+import Head from 'next/head';
+import {Layout} from '@main';
+import {Content} from '@pagesBlocks/_home/';
 
-function Home() {
+function Home(): JSX.Element {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ function Home() {
 
       <Content />
     </>
-  )
+  );
 }
 
-export default Layout(Home)
+export default Layout(Home);

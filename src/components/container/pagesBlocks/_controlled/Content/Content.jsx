@@ -1,6 +1,6 @@
-import { Left } from '../'
-import { ControlledForm } from '@forms/'
-import styles from './Content.module.css'
+import {Left} from '../';
+import {ControlledForm} from '@forms/';
+import styles from './Content.module.css';
 
 export function Content() {
   return (
@@ -12,5 +12,5 @@ export function Content() {
         <ControlledForm />
       </div>
     </div>
-  )
+  );
 }

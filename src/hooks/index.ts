@@ -1,2 +1,2 @@
-export { useCountRender } from './useCountRender'
-export { useEventEmitter } from './useEventEmitter'
+export {useCountRender} from './useCountRender';
+export {useEventEmitter} from './useEventEmitter';

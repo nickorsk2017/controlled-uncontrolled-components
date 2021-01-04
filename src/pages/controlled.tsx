@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { Layout } from '@main'
-import { Content } from '@pagesBlocks/_controlled'
+import Head from 'next/head';
+import {Layout} from '@main';
+import {Content} from '@pagesBlocks/_controlled';
 
-function Users() {
+function Users(): JSX.Element {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ function Users() {
 
       <Content />
     </>
-  )
+  );
 }
 
-export default Layout(Users)
+export default Layout(Users);

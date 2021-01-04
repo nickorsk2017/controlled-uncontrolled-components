@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import styles from './Content.module.scss'
+import Link from 'next/link';
+import styles from './Content.module.scss';
 
 export function Content() {
   return (
@@ -20,5 +20,5 @@ export function Content() {
         </li>
       </ol>
     </div>
-  )
+  );
 }

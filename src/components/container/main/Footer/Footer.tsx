@@ -1,6 +1,6 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.css';
 
-export function Footer() {
+export function Footer(): JSX.Element {
   return (
     <footer className={styles.footer}>
       <span>
@@ -20,5 +20,5 @@ export function Footer() {
         </a>
       </span>
     </footer>
-  )
+  );
 }

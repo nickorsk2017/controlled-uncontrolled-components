@@ -12,7 +12,8 @@
   "plugins": [
     // ...
     "react-hooks",
-    "prettier"
+    "prettier",
+    "@typescript-eslint"
   ],
   "env": {
     "node": true
@@ -31,6 +32,8 @@
     }
   },
   "rules": {
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-explicit-any": "error",
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"

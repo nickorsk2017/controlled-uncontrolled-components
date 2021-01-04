@@ -1,1 +1,1 @@
-export { useThrottle } from './useThrottle'
+export {useThrottle} from './useThrottle';
