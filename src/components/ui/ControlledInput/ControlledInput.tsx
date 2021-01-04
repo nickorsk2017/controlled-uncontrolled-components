@@ -1,9 +1,8 @@
-import {useRef} from 'react';
-import styles from './ControlledInput.module.css';
+import styles from './ControlledInput.module.scss';
 
-export function ControlledInput(props) {
+export function ControlledInput(props: {onChange: (value: string) => void; value: string; label: string}): JSX.Element {
   const {onChange, value, label} = props;
-  const onChangeHandler = (e) => {
+  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(e.target.value);
   };
   return (

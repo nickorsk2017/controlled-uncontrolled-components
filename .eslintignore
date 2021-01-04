@@ -4,3 +4,4 @@ dist/
 node_modules/
 .snapshots/
 *.min.js
+src/tsconfig.json

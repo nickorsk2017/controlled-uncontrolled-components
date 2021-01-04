@@ -4,7 +4,7 @@ type GetInputvalue = (controlNameRef: string) => string | null;
 type GetFormData = () => FormValue;
 
 export function useForm(refInputs: RefInputs): {getInputvalue: GetInputvalue; getFormData: GetFormData} {
-  const getInputvalue: GetInputvalue = (controlNameRef: string) => {
+  const getInputvalue: GetInputvalue = (controlNameRef) => {
     const element = refInputs[controlNameRef];
     if (element) {
       return element.value;

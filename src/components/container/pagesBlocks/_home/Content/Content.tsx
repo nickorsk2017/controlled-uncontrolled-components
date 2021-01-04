@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './Content.module.scss';
 
-export function Content() {
+export function Content(): JSX.Element {
   return (
     <div>
       <h3>

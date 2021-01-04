@@ -3,7 +3,7 @@ import {useCountRender, useEventEmitter} from '@hooks';
 import {ThrottleInput} from '@ui';
 import {useForm} from './_hooks';
 import {FormValue} from './types';
-import styles from './ThrottleForm.module.css';
+import styles from './ThrottleForm.module.scss';
 
 export function ThrottleForm(): JSX.Element {
   const [formState, updateFormState] = useState<FormValue>({

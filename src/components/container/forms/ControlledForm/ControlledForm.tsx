@@ -3,7 +3,7 @@ import {useCountRender, useEventEmitter} from '@hooks';
 import {useForm} from './_hooks';
 import {ControlledInput} from '@ui';
 import {FormValue} from './types';
-import styles from './ControlledForm.module.css';
+import styles from './ControlledForm.module.scss';
 
 export function ControlledForm(): JSX.Element {
   const [formState, updateFormState] = useState<FormValue>({

@@ -1,8 +1,8 @@
-import {Left} from '../';
-import {ControlledForm} from '@forms/';
-import styles from './Content.module.css';
+import {Left} from '..';
+import {ControlledForm} from '@forms';
+import styles from './Content.module.scss';
 
-export function Content() {
+export function Content(): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.leftSide}>

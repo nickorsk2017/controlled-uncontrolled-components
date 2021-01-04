@@ -3,7 +3,7 @@ import {useCountRender, useEventEmitter} from '@hooks';
 import {useForm} from './_hooks';
 import {ReferenceInput} from '@ui';
 import {RefInputs} from './types';
-import styles from './ReferenceForm.module.css';
+import styles from './ReferenceForm.module.scss';
 
 export function ReferenceForm(): JSX.Element {
   const refInputs: RefInputs = {

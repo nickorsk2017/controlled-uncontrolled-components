@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
-import styles from './Left.module.css';
+import styles from './Left.module.scss';
 import {useCountRender, useEventEmitter} from '@hooks';
 
-export function Left() {
+export function Left(): JSX.Element {
   const [countEvent, updateCountEvent] = useState(0);
   const {subscribeEvent} = useEventEmitter();
 
