@@ -1,6 +1,12 @@
 import styles from './ControlledInput.module.scss';
 
-export function ControlledInput(props: {onChange: (value: string) => void; value: string; label: string}): JSX.Element {
+export interface ComponentProps {
+  onChange: (value: string) => void;
+  value: string;
+  label: string;
+}
+
+export const ControlledInput: React.FC<ComponentProps> = (props) => {
   const {onChange, value, label} = props;
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(e.target.value);
@@ -11,4 +17,4 @@ export function ControlledInput(props: {onChange: (value: string) => void; value
       <input className={styles.input} onChange={onChangeHandler} value={value} />
     </div>
   );
-}
+};

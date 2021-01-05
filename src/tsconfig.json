@@ -23,6 +23,6 @@
       "@hooks": ["hooks/"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/ui/ControlledInput/.stories.tsx"],
   "exclude": ["node_modules"]
 }
