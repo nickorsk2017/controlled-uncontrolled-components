@@ -1,5 +1,5 @@
 ## Description
-This is demonstartion of performance of different types of react components:
+This is demonstration of performance of different types of react components:
 
 - Controlled components
 - Throttle components
