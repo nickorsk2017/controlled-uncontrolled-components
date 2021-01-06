@@ -1,6 +1,11 @@
 import styles from './ReferenceInput.module.scss';
 
-export function ReferenceInput(props: {_ref: (ref: HTMLInputElement) => void; label: string}): JSX.Element {
+export interface ComponentProps {
+  _ref: (ref: HTMLInputElement) => void;
+  label: string;
+}
+
+export const ReferenceInput: React.FC<ComponentProps> = (props) => {
   const {_ref, label} = props;
 
   return (
@@ -9,4 +14,4 @@ export function ReferenceInput(props: {_ref: (ref: HTMLInputElement) => void; la
       <input className={styles.input} ref={_ref} />
     </div>
   );
-}
+};
