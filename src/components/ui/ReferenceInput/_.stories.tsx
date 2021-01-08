@@ -9,9 +9,9 @@ export default {
   }
 } as Meta;
 
-const Template: Story<ComponentProps> = (args) => <ReferenceInput {...args} />;
+const Template: Story<ComponentProps> = (args: ComponentProps) => <ReferenceInput {...args} />;
 
-const refInputs = {
+let refInputs = {
   test: null
 };
 

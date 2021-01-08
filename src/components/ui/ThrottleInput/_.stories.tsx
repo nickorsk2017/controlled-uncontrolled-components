@@ -9,7 +9,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<ComponentProps> = (args) => <ThrottleInput {...args} />;
+const Template: Story<ComponentProps> = (args: ComponentProps) => <ThrottleInput {...args} />;
 
 const refInputs = {
   test: null
@@ -17,7 +17,7 @@ const refInputs = {
 
 export const Primary = Template.bind({});
 Primary.args = {
-  onChange: (value): void => {
+  onChange: (value: string): void => {
     console.log(value);
   },
   value: 'Test',

@@ -9,11 +9,11 @@ export default {
   }
 } as Meta;
 
-const Template: Story<ComponentProps> = (args) => <ControlledInput {...args} />;
+const Template: Story<ComponentProps> = (args: ComponentProps) => <ControlledInput {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  onChange: (value): void => {
+  onChange: (value: string): void => {
     console.log(value);
   },
   value: 'Test',
