@@ -1,5 +1,5 @@
 import {useState, useLayoutEffect} from 'react';
-import {useCountRender, useEventEmitter} from '@hooks';
+import {useCountRender, useEventEmitter, useIsomorphicLayoutEffect} from '@hooks';
 import {useForm} from './_hooks';
 import {ControlledInput} from '@ui';
 import {FormValue} from './types';
@@ -15,7 +15,7 @@ export function ControlledForm(): JSX.Element {
 
   const {newEvent} = useEventEmitter();
   // imitation of reference logic of left component
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     newEvent<FormValue>({nameEvent: 'update_form_state', data: formState});
   });
 

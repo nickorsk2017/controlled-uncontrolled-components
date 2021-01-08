@@ -11,7 +11,11 @@ export default {
 
 const Template: Story<ComponentProps> = (args: ComponentProps) => <ReferenceInput {...args} />;
 
-let refInputs = {
+type RefInputs = {
+  [key: string]: HTMLInputElement | null;
+};
+
+const refInputs : RefInputs = {
   test: null
 };
 

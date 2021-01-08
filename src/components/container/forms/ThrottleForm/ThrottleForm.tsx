@@ -1,5 +1,5 @@
-import {useState, useLayoutEffect} from 'react';
-import {useCountRender, useEventEmitter} from '@hooks';
+import {useState} from 'react';
+import {useCountRender, useEventEmitter, useIsomorphicLayoutEffect} from '@hooks';
 import {ThrottleInput} from '@ui';
 import {useForm} from './_hooks';
 import {FormValue} from './types';
@@ -15,7 +15,7 @@ export function ThrottleForm(): JSX.Element {
 
   const {newEvent} = useEventEmitter();
   // imitation of reference logic of left component
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     newEvent({nameEvent: 'update_form_state', data: formState});
   });
 
